@@ -1,0 +1,67 @@
+@import "./../../../styles.sass"
+
+.wrapper
+    min-height: 100vh
+    height: 100%
+
+    &__body
+        margin: 0 0px
+        background-color: $third-color
+    
+    &__content
+        padding: 5px
+        min-height: 360px
+
+.header__option
+    background-color: $secondary-color
+    padding-top: 10px
+    padding-bottom: 10px    
+
+.content__menu
+    background: $third-color !important
+
+    &__item
+        a
+            color: $text-primary !important
+
+    &__submenu
+        &__title
+            margin-left: 5px !important 
+            color: $text-primary !important
+
+    .ant-menu-item-selected
+        background-color: transparent !important
+        
+        a
+            color: $text-quarter!important
+            font-weight: 600
+
+    .ant-menu-submenu
+        background-color: $third-color !important
+        box-shadow: 0 2px 8px $third-color inset !important
+
+        &-selected
+            .ant-menu-submenu-title
+                i, span
+                    color: $text-quarter!important
+                span
+                    font-weight: bold
+
+        .ant-menu-item
+            margin-bottom: 0!important
+            background-color: $eighth
+            border-bottom: 1px solid $light-gray
+
+            i
+                display: none
+
+            &-selected
+                background-color: $eighth!important
+                font-weight: bold
+
+                a
+                    span
+                        color: $text-primary!important
+
+            &:last-child
+                border-bottom: 0!important

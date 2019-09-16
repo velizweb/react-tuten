@@ -1,0 +1,32 @@
+@import "./sass/mobile"
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 48em)
+  @import "./sass/tablet"
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 68em)
+  @import "./sass/desktop"
+
+@import "./../../styles.sass"
+
+.login__container
+  display: flex
+  height: 36rem
+  width: 100%
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  &__h4
+    color: $primary-color
+    margin-bottom: 25px
+    font-weight: bold
+    font-size: 22px
+
+  &__form__button
+    width: 100%
+
+  &__password
+    display: flex
+    justify-content: space-between

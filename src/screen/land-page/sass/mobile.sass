@@ -1,0 +1,62 @@
+@import "./../../../styles.sass"
+
+.ant-layout-sider-zero-width-trigger
+    background-color: $secondary-color!important
+    color: $text-primary!important
+    box-shadow: 1px 1px 4px 1px $shadow
+    
+.ant-layout-sider-collapsed
+    .ant-layout-sider-zero-width-trigger 
+        box-shadow: none;
+
+.ant-layout-sider 
+    position: absolute!important
+    z-index: 100
+    height: inherit
+
+li.ant-menu-item.content__menu__item.ant-menu-item-selected
+    background-color: $bg-grey-light
+    font-weight: 500
+
+.ant-menu
+    margin: 0 0 10px 0!important
+    font-size: 12px
+    i.material-icons, span
+        float: left
+    i.material-icons
+        margin: 13px 5px 0 0
+    &-item
+        span
+            display: inline-block!important
+        &-selected
+            background-color: none!important;
+
+    .ant-menu-submenu
+        background-color: $third-color !important
+        box-shadow: 0 2px 8px $third-color inset !important
+
+        &-selected
+            .ant-menu-submenu-title
+                i, span
+                    color: $text-quarter!important
+                span
+                    font-weight: bold
+
+        .ant-menu-item
+            margin: 0!important
+            background-color: $eighth
+            border-bottom: 1px solid $light-gray
+
+            i
+                display: none
+
+            &-selected
+                background-color: $eighth!important
+                font-weight: bold
+
+                a
+                    span
+                        color: $text-primary!important
+
+            &:last-child
+                border-bottom: 0!important

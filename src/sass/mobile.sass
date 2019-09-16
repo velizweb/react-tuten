@@ -1,0 +1,105 @@
+$width-form: 30rem
+$bg-grey-light: rgba(0, 0, 0, 0.04)
+$bg-red-light: #e0193e
+$bg-green: #4caf50
+
+/*borders*/
+$light-gray: #D9D9D9
+$shadow: rgba(0, 0, 0, 0.5)
+
+/*color text*/
+$text-primary: #3D3D3D
+$text-secondary: #ffffff
+$text-third: #727171
+$text-quarter: #02A1DD
+$text-fifth: #29C403
+$text-sixth: #C41703
+$text-seventh: #ff4d4f
+$text-eigthth: #000000
+
+/*background*/
+$primary-color: #02A1DD
+$secondary-color: #fcd408
+$third-color: #ffffff
+$quarte-color: #727171
+$fifth-color: #FCF3CF
+$seventh-color: #C9C9C9
+$eighth: #F5F5F5
+.wrapper__content
+  margin: 2rem 1rem
+
+.container__crud
+  .ant-card-head
+    background: $eighth
+
+    h1
+      margin-bottom: 0
+
+  &__title
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 0.7rem
+    
+.ant-btn-primary
+  background-color: $primary-color!important
+  border-color: $primary-color!important
+
+.ant-form
+  .ant-col
+    &.ant-form-item-label
+        label
+            font-weight: 500!important
+    .ant-form-item-control
+        width: 100%!important
+
+.container__crud
+
+  .ant-col
+    display: flex!important
+    .ant-card
+        flex: 1
+        border-color: $light-gray!important
+
+  &__form
+
+    &.container_form_customer
+        &.ant-card-bordered
+            border: none!important
+        .ant-card-body
+            padding: 0!important
+            .ant-table
+                table
+                    thead
+                        tr
+                            box-shadow: 0px 0px 0px 1px $light-gray
+                            border-radius: 4px 4px 0 0
+                            th
+                                border-bottom: none
+                                border-radius: 4px 4px 0 0
+                            th
+                                padding: 13px 20px 13px 30px!important
+                                background-color: $third-color
+                    tbody
+                        tr
+                            td
+                                border-bottom-color: $light-gray!important
+                                padding: 16px 20px 16px 30px!important
+                            td:last-child
+                                text-align: right
+        .ant-pagination
+            margin-bottom: -50px
+
+    &__title
+      text-transform: uppercase
+      font-weight: bold
+      font-size: 0.7rem
+
+    .col-vtgutter
+      margin-top: 1rem
+
+    .ant-card
+        border: 1px solid #E4E4E4
+        border-radius: 4px!important
+        .ant-card-head
+          border-radius: 4px 4px 0 0!important
+            

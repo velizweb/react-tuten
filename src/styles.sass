@@ -1,0 +1,47 @@
+@import "./sass/mobile"
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 48em)
+  @import "./sass/tablet"
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 68em)
+  @import "./sass/desktop"
+
+$width-form: 30rem
+$bg-grey-light: rgba(0, 0, 0, 0.04)
+$bg-red-light: #e0193e
+
+/*color text*/
+$text-primary: #3D3D3D
+$text-secondary: #ffffff
+$text-third: #727171
+$text-quarter: #02A1DD
+$text-fifth: #29C403
+$text-sixth: #C41703
+
+
+/*background*/
+$primary-color: #02A1DD
+$secondary-color: #fcd408
+$third-color: #ffffff
+$quarte-color: #727171
+$fifth-color: #FCF3CF
+$seventh-color: #C9C9C9
+$eighth: #EFEFEF
+$bg-grey-light: #F5F5F5
+
+.wrapper__content
+  margin: 2rem 1rem
+
+.container__crud
+  .ant-card-head
+    background: $bg-grey-light
+
+    h1
+      margin-bottom: 0
+
+  &__title
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 0.7rem

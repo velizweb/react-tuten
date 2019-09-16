@@ -1,0 +1,48 @@
+@import "sass/mobile"
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 48em)
+  @import "sass/tablet"
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 68em)
+  @import "sass/desktop"
+
+@import "./../../styles.sass"
+
+.header
+    display: flex
+    width: 100%
+    background-color: $secondary-color
+    height: 60px
+    align-items: center
+    justify-content: flex-start
+    padding: 15px
+
+    a
+      color: $text-primary
+
+    &__left
+      display: flex
+      flex: 1
+      color: $text-primary
+      font-weight: 700
+
+    &__right
+      display: flex
+
+      &__button
+        color: $text-primary !important
+
+    &__user__info
+      display: flex
+
+      &__cont__text
+        padding-left: 10px
+
+      &__text
+        margin-top: 0px
+        margin-bottom: 0px
+
+      &__name
+        color: $text-third
